@@ -365,3 +365,118 @@ body {
 }
 
 
+/* -------------------------- */
+:root {
+  --nav-color: #1A0B2E; /* navbar color */
+}
+
+/* FULL SECTION background */
+.info-section {
+  padding: 80px 20px;
+  background: #1A0B2E;  
+}
+
+/* Title */
+.section-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 40px;
+  color: white; 
+}
+
+/* Content Box */
+.info-box {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.08); 
+  color: white;
+  display: flex;
+  gap: 30px;
+  padding: 30px;
+  border-radius: 14px;
+  align-items: center;
+}
+
+/* Left image */
+.info-img img {
+  width: 200px;
+  border-radius: 2px;
+}
+
+/* Right content */
+/* .info-content h4 {
+  font-size: 22px;
+  margin-bottom: 10px;
+} */
+
+.info-content p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* Icons */
+/* Icons container */
+.social-icons {
+  display: flex;
+  gap: 14px;
+}
+
+/* outer gradient ring */
+.icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  padding: 2px; /* border thickness */
+  background: linear-gradient(
+    135deg,
+    #ffcc00,
+    #ff4ecd,
+    #7a5cff
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+/* thin gradient ring */
+.icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background:
+    linear-gradient(135deg, #ffcc00, #ff4ecd, #7a5cff);
+  padding: 1.5px;                 /* 🔥 border thickness */
+}
+
+/* inner circle (same as section bg) */
+.icon::before {
+  content: "";
+  position: absolute;
+  inset: 1.5px;
+  background: var(--nav-color);   /* section background */
+  border-radius: 50%;
+}
+
+/* center icon */
+.icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon img {
+  width: 18px;
+  height: 18px;
+  position: relative;
+  z-index: 1;
+}
+
+/* hover (optional) */
+/* .icon:hover {
+  box-shadow: 0 0 6px rgba(255, 78, 205, 0.6);
+  transform: scale(1.1);
+  transition: 0.3s;
+} */
