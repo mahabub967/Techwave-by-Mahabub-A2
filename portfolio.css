@@ -480,3 +480,47 @@ body {
   transform: scale(1.1);
   transition: 0.3s;
 } */
+
+
+/* -------------------------------------- */
+
+/* Footer CSS */
+/* Footer CSS Update */
+.footer {
+  width: 100%;
+  background: url('assets/footer-bg.png') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 40px 20px 20px 20px;
+}
+
+.footer .logo h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* Column spacing */
+  margin-bottom: 20px;
+  flex-wrap: wrap; /* Responsive for small screens */
+}
+
+.icon-item {
+  display: flex;
+  align-items: center; /* icon + text vertically center */
+  gap: 8px; /* icon এবং text এর মধ্যে gap */
+  font-size: 0.9em;
+}
+
+.icon-item img {
+  width: 25px;  /* ছোট আইকন */
+  height: 25px;
+}
+
+footer .copyright {
+  font-size: 0.8em;
+  margin-top: 20px;
+  color: #ccc;
+}
