@@ -122,7 +122,7 @@ body {
 }
 
 
-/* ************ */
+/* *******--------------------***** */
 
 
 .hero {
@@ -137,7 +137,6 @@ body {
 }
 
 .hero-content {
-  /* display: flex; */
   align-items: center;
   gap: 40px;
 }
@@ -161,7 +160,7 @@ body {
   color: white;
   cursor: pointer;
   background: linear-gradient(135deg, rgb(128,0,255), rgb(255,105,180), rgb(255,215,0));
-  display: inline-flex;       /* icon + text inline flex */
+  display: inline-flex;   
   align-items: center;
   margin-right: 10px;
 }
@@ -192,7 +191,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 50px 20px 100px; /* top 50px, bottom 100px */
+  padding: 50px 20px 100px; 
   box-sizing: border-box;
 }
 
@@ -236,7 +235,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* flex: 1;      */
   row-gap: 15px;
   min-width: 150px;
   margin: 10px 0;
@@ -246,7 +244,7 @@ body {
   font-size: 30px;
   font-weight: bold;
   margin-bottom: 10px;
-  color: rgba(0, 255, 136, 1); /* bright green */
+  color: rgba(0, 255, 136, 1); 
 }
 
 
@@ -259,7 +257,7 @@ body {
 /* ----------------------------------- */
 .custom-grid {
   width: 100%;
-  background-color: #1A0B2E; /* nav color */
+  background-color: #1A0B2E; 
   padding: 50px 20px;
   text-align: center;
   display: flex;
@@ -273,7 +271,7 @@ body {
   color: white;
 }
 
-/* Outer box that contains the grid, adds padding all around */
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -281,7 +279,7 @@ body {
   gap: 20px;
   width: 100%;
   max-width: 1200px;
-  padding: 20px;        /* space inside the container */
+  padding: 20px;   
   box-sizing: border-box;
 }
 
@@ -299,18 +297,12 @@ body {
   align-items: center;     
   justify-content: center; 
   padding: 20px;
-  border-radius: 12px;
-  border: 2px solid rgba(255,255,255,0.3); 
+  border-radius: 20px;
   background-color: rgba(255,255,255,0.05); 
   color: white;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
-/* Hover effect */
-/* .grid-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-} */
 
 .grid-item img {
   width: 60px;
@@ -343,10 +335,10 @@ body {
 .video-section h3 {
   font-size: 28px;
   color: white;
-  /* background-color: #4B0082; background color add */
+
   padding: 15px 0;
   margin-bottom: 30px;
-  border-radius: 8px; /* optional */
+  border-radius: 8px; 
 }
 
 .video-grid {
@@ -367,10 +359,10 @@ body {
 
 /* -------------------------- */
 :root {
-  --nav-color: #1A0B2E; /* navbar color */
+  --nav-color: #1A0B2E; 
 }
 
-/* FULL SECTION background */
+
 .info-section {
   padding: 80px 20px;
   background: #1A0B2E;  
@@ -403,19 +395,13 @@ body {
   border-radius: 2px;
 }
 
-/* Right content */
-/* .info-content h4 {
-  font-size: 22px;
-  margin-bottom: 10px;
-} */
 
 .info-content p {
   margin-bottom: 20px;
   line-height: 1.6;
 }
 
-/* Icons */
-/* Icons container */
+
 .social-icons {
   display: flex;
   gap: 14px;
@@ -426,7 +412,7 @@ body {
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  padding: 2px; /* border thickness */
+  padding: 2px; 
   background: linear-gradient(
     135deg,
     #ffcc00,
@@ -447,7 +433,7 @@ body {
   border-radius: 50%;
   background:
     linear-gradient(135deg, #ffcc00, #ff4ecd, #7a5cff);
-  padding: 1.5px;                 /* 🔥 border thickness */
+  padding: 1.5px; 
 }
 
 /* inner circle (same as section bg) */
@@ -455,7 +441,7 @@ body {
   content: "";
   position: absolute;
   inset: 1.5px;
-  background: var(--nav-color);   /* section background */
+  background: var(--nav-color); 
   border-radius: 50%;
 }
 
@@ -474,18 +460,10 @@ body {
   z-index: 1;
 }
 
-/* hover (optional) */
-/* .icon:hover {
-  box-shadow: 0 0 6px rgba(255, 78, 205, 0.6);
-  transform: scale(1.1);
-  transition: 0.3s;
-} */
-
 
 /* -------------------------------------- */
 
-/* Footer CSS */
-/* Footer CSS Update */
+
 .footer {
   width: 100%;
   background: url('assets/footer-bg.png') center/cover no-repeat;
@@ -502,20 +480,20 @@ body {
 .footer-icons {
   display: flex;
   justify-content: center;
-  gap: 30px; /* Column spacing */
+  gap: 30px; 
   margin-bottom: 20px;
-  flex-wrap: wrap; /* Responsive for small screens */
+  flex-wrap: wrap; 
 }
 
 .icon-item {
   display: flex;
-  align-items: center; /* icon + text vertically center */
-  gap: 8px; /* icon এবং text এর মধ্যে gap */
+  align-items: center; 
+  gap: 8px; 
   font-size: 0.9em;
 }
 
 .icon-item img {
-  width: 25px;  /* ছোট আইকন */
+  width: 25px;  
   height: 25px;
 }
 
