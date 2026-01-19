@@ -296,21 +296,21 @@ body {
 .grid-item {
   display: flex;
   flex-direction: column;
-  align-items: center;      /* horizontal center */
-  justify-content: center;  /* vertical center */
+  align-items: center;     
+  justify-content: center; 
   padding: 20px;
   border-radius: 12px;
-  border: 2px solid rgba(255,255,255,0.3); /* fact-style border */
-  background-color: rgba(255,255,255,0.05); /* subtle transparent */
+  border: 2px solid rgba(255,255,255,0.3); 
+  background-color: rgba(255,255,255,0.05); 
   color: white;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
 /* Hover effect */
-.grid-item:hover {
+/* .grid-item:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-}
+} */
 
 .grid-item img {
   width: 60px;
@@ -333,7 +333,6 @@ body {
 
 
 /* ----------------- */
-
 .video-section {
   width: 100%;
   background-color: #1A0B2E; /* nav color */
@@ -344,15 +343,18 @@ body {
 .video-section h3 {
   font-size: 28px;
   color: white;
+  /* background-color: #4B0082; background color add */
+  padding: 15px 0;
   margin-bottom: 30px;
+  border-radius: 8px; /* optional */
 }
 
 .video-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
   max-width: 1200px;
-  margin: 0 auto; /* center the grid */
+  margin: 0 auto; 
 }
 
 .video-item iframe {
@@ -361,6 +363,5 @@ body {
   border-radius: 12px;
   border: none;
 }
-
 
 
