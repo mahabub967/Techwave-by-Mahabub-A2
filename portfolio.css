@@ -189,18 +189,73 @@ body {
   width: 100%;
   background-color: #1A0B2E;
   color: white;
-  font-size: 16px;
   display: flex;
-  justify-content: center;  
-  align-items: flex-start;  
-
-  padding-top: 50px;
-  padding-bottom: 200px;    
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px 100px; /* top 50px, bottom 100px */
+  box-sizing: border-box;
 }
 
 .after-hero .content {
   width: 846px;
+  max-width: 90%;
   text-align: center;
+  margin-bottom: 50px;
 }
+
+.after-hero .content h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.after-hero .content p {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* ------------------------- */
+
+.fact-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 100px;
+
+}
+
+.facts {
+  display: flex;                 
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1600px;      
+  margin: 0 auto;
+  flex-wrap: wrap;      
+}
+
+.fact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* flex: 1;      */
+  row-gap: 15px;
+  min-width: 150px;
+  margin: 10px 0;
+}
+
+.fact-number {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: rgba(0, 255, 136, 1); /* bright green */
+}
+
+
+.fact-name {
+  font-size: 14px;
+  text-align: center;
+  font-weight:200;
+}
+
+
 
 
